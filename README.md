@@ -41,6 +41,8 @@ Example:
 node app.js -d ../tests/demo.db
 ```
 
+Any other database file produced by SMT Service can be used as input for SMT Viewer.
+
 ## Help 
 
 To get help and see what are all possible initial parameters you can type
