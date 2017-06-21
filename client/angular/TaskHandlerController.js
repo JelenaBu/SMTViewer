@@ -83,31 +83,4 @@ app.controller('TaskHandler',['$scope','$window','$http','realTimeDB', 'timeOut'
         });
     };
 
-    // Attempt for submitting a db from angular
-    // $( "#uploadDB" ).submit(function( event ) {
-    //     event.preventDefault();
-    //     var file_data = $("#db").prop("files")[0];
-    //     console.log(file_data);
-    //     // var formData = new FormData();
-    //     // formData.append("file", file_data)
-    //     // console.log(formData)
-    //     var db = {"file": file_data};
-    //     console.log(db)
-    //
-    //     $http({
-    //         method : 'POST',
-    //         url : '/upload',
-    //         encType : "multipart/form-data",
-    //         data: db
-    //     }).then(function successCallback(response) {
-    //         //put each entry of the response array in the table
-    //
-    //
-    //     }, function errorCallback(response) {
-    //         // called asynchronously if an error occurs
-    //         // or server returns response with an error status.
-    //         $window.alert('An error occured!');
-    //     });
-    // });
-
 }]);

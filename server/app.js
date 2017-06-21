@@ -130,23 +130,12 @@
         });
     });
 
-    // app.post('/upload', function(req, res) {
-    //     console.log('Uploading db file...');
-    //     console.log(req.body)
-    //     console.log(req.body.file)
-    //     // console.log(req.data)
-    //     // console.log(req.file)
-    //     res.json("");
-    // });
-
     app.get('/getServerData', function(req, res) {
         var response = taskHandler.executeAll(exec);
         res.json(response);
     });
 
     app.post('/changeTimeout', function (req, res) {
-        // console.log(req.body.timeout);
-        // console.log(req.body.type);
         if(req.body.type == "increase"){
             taskHandler.increaseTimeout(req.body.timeout);
         }
