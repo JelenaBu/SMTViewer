@@ -1,0 +1,64 @@
+
+#line {
+    height: 6px;
+    width: 70%;
+    /*background: white;*/
+    background: gray;
+    border-radius: 5px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#span {
+    display: none;
+    width: 70%;
+    margin: auto;
+    margin-top: 25%;
+    text-align: center;
+    /*color: white;*/
+    color: gray;
+}
+
+.dash {
+    width: 1px;
+    height: 30px;
+    /*background: white;*/
+    background: gray;
+    /*border-radius: 15px;*/
+    position: absolute;
+    top: -10px;
+    /*border: 3px solid white;*/
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.dash .popupSpan {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    /*color: white;*/
+    color: gray;
+    position: absolute;
+    top: 20px;
+    left: -75px;
+    display: none;
+    transition: all 0.1s ease-out;
+}
+.dash.hover:before, .circle.active:before {
+    display: block;
+}
+.dash.hover .popupSpan, .circle.active .popupSpan {
+    display: block;
+}
+.dash.active .popupSpan {
+    top: -40px;
+}
+.active {
+    /*background: #00cc00;*/
+    /*color: #00cc00;*/
+    border: 2px solid #00cc00;
+}
